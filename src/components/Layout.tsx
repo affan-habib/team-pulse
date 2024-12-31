@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { BarChart3, MessageSquare, SmilePlus, Brain, Home } from 'lucide-react';
+import { BarChart3, MessageSquare, SmilePlus, Brain, Home, Settings } from 'lucide-react';
 import { ThemeToggle } from './ThemeToggle';
 
 export function Layout({ children }: { children: React.ReactNode }) {
@@ -28,6 +28,14 @@ export function Layout({ children }: { children: React.ReactNode }) {
               <Link to="/feedback" className="flex items-center px-3 py-2 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400">
                 <MessageSquare className="w-5 h-5 mr-2" />
                 <span>Feedback</span>
+              </Link>
+              <Link to="/admin/quiz" className="flex items-center px-3 py-2 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400">
+                <Settings className="w-5 h-5 mr-2" />
+                <span>Admin Quiz</span>
+              </Link>
+              <Link to="/admin/feedback" className="flex items-center px-3 py-2 text-gray-700 dark:text-gray-200 hover:text-indigo-600 dark:hover:text-indigo-400">
+                <Settings className="w-5 h-5 mr-2" />
+                <span>Admin Feedback</span>
               </Link>
             </div>
             <div className="flex items-center">
