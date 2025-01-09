@@ -8,6 +8,7 @@ import { Feedback } from './pages/Feedback';
 import { FeedbackDashboard } from './pages/FeedbackDashboard';
 import { AdminQuiz } from './pages/AdminQuiz';
 import { AdminFeedback } from './pages/AdminFeedback';
+import { QuizList } from './pages/QuizList';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/feedback" element={<Feedback />} />
           <Route path="/feedback-dashboard" element={<FeedbackDashboard />} />
           <Route path="/admin/quiz" element={<AdminQuiz />} />
+          <Route path="/quizzes" element={<QuizList />} />
           <Route path="/admin/feedback" element={<AdminFeedback />} />
         </Routes>
       </Layout>
