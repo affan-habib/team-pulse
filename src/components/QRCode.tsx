@@ -13,7 +13,7 @@ export function QRCode({ url, size = 256 }: QRCodeProps) {
         size={size}
         level="H"
         includeMargin
-        className="bg-white p-4 rounded-lg shadow-md"
+        className="bg-white p-4 rounded-lg border"
       />
       <p className="text-sm text-gray-600">Scan to participate</p>
     </div>

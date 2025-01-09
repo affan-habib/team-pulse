@@ -14,10 +14,10 @@ export function Home() {
         {/* Left Column - QR Code */}
         <div className="flex flex-col items-start">
           <div className="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700 w-full transition-colors">
-            <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-6">
+            <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-6 text-center">
               Scan to Participate
             </h2>
-            <div className="flex justify-center bg-white p-4 rounded-lg">
+            <div>
               <QRCode url={currentUrl} />
             </div>
             <p className="text-gray-600 dark:text-gray-300 mt-6 text-center">
